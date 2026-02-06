@@ -602,7 +602,18 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 - Deployed on Feb 03, 2026 - By Paul Lulami Wamenya</p>
+        <p>Pravin Mishra Portfolio v1.0 - Deployed on <span id="deployDate"></span> - By Paul Lulami Wamenya</p>
+
+        <script>
+            // Set footer year
+            const currentyear = new Date().getFullYear();
+            document.getElementById("year").texContent = currentYear;
+
+            // Set deploy date (Day 2 requirement)
+            const today = new Date();
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            document.getElementById("deployDate").textContent = today.toLocalDateString("en-GB", options);
+        </script>
       </div>
 
     </div>
