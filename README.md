@@ -1,7 +1,42 @@
-Mini Sprint Delivery (Jira + GitHub Pages)
+# DMI Portfolio Website (Static HTML/CSS)
 
-This repository documents a five-day mini sprint executed using Jira Scrum to deliver a small but real improvement to a website. The focus of the assignment was not the size of the change, but the end-to-end delivery process: sprint setup, story tracking, daily Scrum updates, incremental improvements, and live deployment.
+This repository contains a clean, professional-looking **static portfolio website** used in **DevOps Micro Internship (DMI)** Week 1 to practice:
+- Linux basics
+- Nginx hosting
+- Deployment proof / ownership
+- Production-style checks
 
-The feature implemented was a footer displaying the website version, deploy date, and author. All changes were built locally, versioned with Git, and deployed successfully to GitHub Pages, with each step tracked and evidenced in Jira through subtasks, comments, and burndown charts.
+✅ Students deploy this website on an Ubuntu VM using Nginx and keep it live for 24 hours.
 
-This project demonstrates practical Agile and DevOps behaviors such as incremental delivery, traceability, and verification on a live environment, rather than isolated or theoretical development.
+---
+
+## Who is this for?
+- DMI students (beginner → intermediate)
+- Anyone learning how to host a static site with Nginx on Linux
+
+---
+
+## What you will build
+A portfolio-style website hosted on:
+- **Ubuntu VM**
+- **Nginx**
+- Accessible via: `http://<public-ip>`
+
+---
+
+## Mandatory Ownership Proof (DMI Rule)
+Before you deploy, you MUST edit the footer and add your details:
+
+Original:
+
+```html
+<p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
+```
+
+Add this line (example):
+
+```html
+<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+```
+
+✅ This proof must be visible in your browser screenshot submission.
